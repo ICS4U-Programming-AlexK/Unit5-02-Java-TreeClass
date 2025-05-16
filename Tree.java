@@ -8,6 +8,14 @@ public class Tree {
      */
     private int feetTall;
     /**
+     * The default number of leaves on the tree.
+     */
+    private static final int GROWTH_RATE = 1000;
+    /**
+     * The default height increase of the tree.
+     */
+    private static final int HEIGHT_INCREASE = 3;
+    /**
      * Constructor for the Tree class.
      *
      * @param theNumberOfLeaves
@@ -25,8 +33,8 @@ public class Tree {
      * and height.
      */
     public void grow() {
-        numberOfLeaves += 1000;
-        feetTall += 3;
+        numberOfLeaves += GROWTH_RATE;
+        feetTall += HEIGHT_INCREASE;
     }
     /**
      * Gets the number of leaves on the tree.
