@@ -1,4 +1,20 @@
 final class Main {
+    /**
+     * The amount of trees.
+     */
+    private static final int TREE_AMOUNT_1 = 1000;
+    /**
+     * The amount of leaves on the tree.
+     */
+    private static final int TREE_AMOUNT_2 = 2000;
+    /**
+     * The amount of leaves on the tree.
+     */
+    private static final int TREE_HEIGHT_1 = 10;
+    /**
+     * The height of the tree in feet.
+     */
+    private static final int TREE_HEIGHT_2 = 20;
         /**
      * Private constructor to prevent instantiation.
      * @throws IllegalStateException Utility class.
@@ -11,8 +27,8 @@ final class Main {
      * The x-coordinate of the balloon.
      */
     public static void main(final String[] args) {
-            Tree treeA = new Tree(1000, 10);
-            Tree treeB = new Tree(2000, 20);
+            Tree treeA = new Tree(TREE_AMOUNT_1, TREE_HEIGHT_1);
+            Tree treeB = new Tree(TREE_AMOUNT_2, TREE_HEIGHT_2);
             System.out.println("Tree A original leaves: "
              + treeA.getNumberOfLeaves
                             + " and is "
